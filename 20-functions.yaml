@@ -35,3 +35,9 @@
       name: "need uppcase this one"
     ansible.builtin.debug:
       msg: "Hello {{ name | upper }}"
+
+  - name: ip address is valid or not
+    vars:
+      ip: "300.342.560.123"
+    ansible.builtin.debug:
+      msg: "Hello {{ ip | ansible.utils.ipaddr }}"
