@@ -36,13 +36,13 @@
     ansible.builtin.debug:
       msg: "Hello {{ name | upper }}"
 
-  - name: ip address is valid or not
+  - name: ip address is valid or not ## this is not valid
     vars:
       ip: "300.342.560.123"
     ansible.builtin.debug:
       msg: "Hello {{ ip | ansible.utils.ipaddr }}"
   
-  - name: ip address is valid or not
+  - name: ip address is valid or not ## this is valid
     vars:
       ip: "123.23.67.43"
     ansible.builtin.debug:
