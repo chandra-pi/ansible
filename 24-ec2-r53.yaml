@@ -9,7 +9,6 @@
     subnet_id: subnet-0a7bb7a9b0da50bec
     sg_id: sg-0beda789759f4ad50
     zone: devaws84s.online
-    zone: 
   tasks:
   - name: create ec2
     amazon.aws.ec2_instance:
